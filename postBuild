@@ -1,3 +1,6 @@
+pwd
+ls -lrt
+
 cp jupyter_config.json /etc/jupyter
 cat /etc/jupyter/jupyter_server_config_extra.py >> /etc/jupyter/jupyter_server_config.py
 

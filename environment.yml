@@ -6,6 +6,7 @@ dependencies:
   - jupyterhub-singleuser>=3.0,<4.0
   - python=3.8
   - nbgitpuller=1.1.*
+  - pip
   - git
   - numpy
   - scipy>=1.1
@@ -19,7 +20,3 @@ dependencies:
   - pip:
     - jupyter-server-proxy==3.2.2
     - aiohttp==3.8.4
-    - git+https://github.com/nmearl/hubbleds.git
-
-variables:
-  NODE_OPTIONS: --openssl-legacy-provider

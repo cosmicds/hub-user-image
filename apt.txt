@@ -1,0 +1,9 @@
+gcc
+g++
+gfortran
+cmake
+curl
+libxml2-dev
+libxslt-dev
+software-properties-common
+npm

@@ -6,4 +6,5 @@ curl
 libxml2-dev
 libxslt-dev
 software-properties-common
+node-gyp
 npm

@@ -2,6 +2,7 @@ pwd
 ls -lrt
 jupyter --paths
 
+mkdir -p /home/jovyan/.local/etc/jupyter
 cp jupyter_config.json /home/jovyan/.local/etc/jupyter
 cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
 

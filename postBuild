@@ -2,8 +2,8 @@ pwd
 ls -lrt
 jupyter --paths
 
-cp jupyter_config.json /usr/local/etc/jupyter
-cat jupyter_server_config_extra.py >> /usr/local/etc/jupyter/jupyter_server_config.py
+cp jupyter_config.json /home/jovyan/.local/etc/jupyter
+cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
 
 export NODE_OPTIONS=--openssl-legacy-provider
 pip install git+https://github.com/nmearl/hubbleds.git

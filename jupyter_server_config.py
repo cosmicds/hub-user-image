@@ -8,11 +8,6 @@ SERVICE_PREFIX = os.environ["JUPYTERHUB_SERVICE_PREFIX"]
 
 
 c.ServerProxy.servers = {
-    "test-server": {
-        "command": ["python", "-m", "http.server", "{port}"],
-        "absolute_url": False,
-        "launcher_entry": {"title": "Test Server"},
-    },
     "hubble": {
         "command": [
             "voila",

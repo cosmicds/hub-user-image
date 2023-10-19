@@ -27,7 +27,7 @@ jobs:
       run: |
         ls -lrt
         export CDS_API_KEY=${{ secrets.CDS_API_KEY }}
-        cat jupyter_server_config_extra.py | envsubst
+        cat jupyter_server_config_extra.py | envsubst > jupyter_server_config_extra.py
         less jupyter_server_config_extra.py
 
     - name: Build and push the image to quay.io

@@ -43,6 +43,8 @@ jobs:
       # Secrets that need to be available to the app
       env:
         CDS_API_KEY: ${{ secrets.CDS_API_KEY }}
+
+    - name: Export variables for image
       run: |
         ls -lrt
         echo "export CDS_API_KEY=${{ secrets.CDS_API_KEY }}" >> postBuild

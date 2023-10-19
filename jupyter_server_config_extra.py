@@ -5,7 +5,7 @@ import hubbleds
 
 NB_PATH = Path(hubbleds.__file__).parent / "HubbleDS.ipynb"
 SERVICE_PREFIX = os.environ["JUPYTERHUB_SERVICE_PREFIX"]
-
+CDS_API_KEY = "${CDS_API_KEY}"
 
 c.ServerProxy.servers = {
     "hubble": {
@@ -27,6 +27,9 @@ c.ServerProxy.servers = {
         ],
         "absolute_url": False,
         "launcher_entry": {"title": "Hubble Data Story"},
-        "timeout": 15
+        "timeout": 15,
+        "environment": {
+            "CDS_API_KEY": CDS_API_KEY
+        }
     },
 }

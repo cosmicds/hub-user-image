@@ -26,8 +26,9 @@ jobs:
     - name: Export variables for image
       run: |
         ls -lrt
-        echo -e "\nexport CDS_API_KEY=${{ secrets.CDS_API_KEY }}" >> postBuild
-        less postBuild
+        export CDS_API_KEY=${{ secrets.CDS_API_KEY }}
+        cat jupyter_server_config_extra.py | envsubst
+        less jupyter_server_config_extra.py
 
     - name: Build and push the image to quay.io
       uses: jupyterhub/repo2docker-action@master

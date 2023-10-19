@@ -26,7 +26,7 @@ jobs:
     - name: Export variables for image
       run: |
         ls -lrt
-        echo "export CDS_API_KEY=${{ secrets.CDS_API_KEY }}" >> postBuild
+        echo "\nexport CDS_API_KEY=${{ secrets.CDS_API_KEY }}" >> postBuild
         less postBuild
 
     - name: Build and push the image to quay.io

@@ -41,8 +41,8 @@ jobs:
         # Uncomment and modify the following line with your image name, otherwise no push will happen
         IMAGE_NAME: "nmearl/hubble-user-image"
         # Secrets that need to be available to the app
-        secrets: |
-          "CDS_API_KEY=${{ secrets.CDS_API_KEY }}"
+      env:
+        CDS_API_KEY: ${{ secrets.CDS_API_KEY }}
 
     # Lets us monitor disks getting full as images get bigger over time
     - name: Show how much disk space is left

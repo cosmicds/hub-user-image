@@ -22,12 +22,11 @@ c.ServerProxy.servers = {
             "--VoilaConfiguration.enable_nbextensions=true",
             "--VoilaConfiguration.file_whitelist=['.*']",
             "--VoilaConfiguration.show_tracebacks=true",
-            "--VoilaConfiguration.http_keep_alive_timeout=30",
-            "--VoilaConfiguration.iopub_timeout=100",
+            "--VoilaConfiguration.http_keep_alive_timeout=5"
         ],
         "absolute_url": False,
         "launcher_entry": {"title": "Hubble Data Story"},
-        "timeout": 15,
+        "timeout": 30,
         "environment": {
             "CDS_API_KEY": CDS_API_KEY
         }

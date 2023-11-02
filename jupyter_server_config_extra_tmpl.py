@@ -18,11 +18,12 @@ c.ServerProxy.servers = {
             "--Voila.base_url={base_url}hubble/",
             "--Voila.server_url=/",
             "--Voila.tornado_settings={{'allow_origin': '*'}}",
-            "--VoilaConfiguration.template=cosmicds-default",
+            # "--VoilaConfiguration.template=cosmicds-default",
             "--VoilaConfiguration.enable_nbextensions=true",
             "--VoilaConfiguration.file_whitelist=['.*']",
             "--VoilaConfiguration.show_tracebacks=true",
-            "--VoilaConfiguration.http_keep_alive_timeout=5"
+            "--VoilaConfiguration.http_keep_alive_timeout=5",
+            "--ExecutePreprocessor.timeout=300"
         ],
         "absolute_url": False,
         "launcher_entry": {"title": "Hubble Data Story"},

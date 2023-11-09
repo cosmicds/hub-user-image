@@ -2,6 +2,9 @@ import os
 from pathlib import Path
 
 import hubbleds
+import logging
+
+logging.getLogger('tornado.access').disabled = True
 
 NB_PATH = Path(hubbleds.__file__).parent / "HubbleDS.ipynb"
 SERVICE_PREFIX = os.environ["JUPYTERHUB_SERVICE_PREFIX"]
@@ -14,7 +17,6 @@ c.ServerProxy.servers = {
             f"{NB_PATH.resolve()}",
             "--port={port}",
             "--no-browser",
-            "--debug",
             "--Voila.base_url={base_url}hubble/",
             "--Voila.server_url=/",
             "--Voila.tornado_settings={{'allow_origin': '*'}}",

@@ -25,6 +25,8 @@ c.ServerProxy.servers = {
             "--VoilaConfiguration.file_whitelist=['.*']",
             "--VoilaConfiguration.show_tracebacks=true",
             "--VoilaConfiguration.http_keep_alive_timeout=5",
+            "--MappingKernelManager.cull_interval=240",
+            "--MappingKernelManager.cull_idle_timeout=600",
             "--ExecutePreprocessor.timeout=300"
         ],
         "absolute_url": False,

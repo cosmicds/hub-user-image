@@ -3,7 +3,7 @@ ls -lrt
 jupyter --paths
 
 mkdir -p /home/jovyan/.local/etc/jupyter
-# cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
+cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
 
 pip install git+https://github.com/nmearl/hubbleds@2i2c-hub
 

@@ -1,8 +1,7 @@
 {
     "VoilaConfiguration": {
-      "template": "cosmicds-default",
       "enable_nbextensions": true,
-      "file_whitelist": [".*"],
+      "file_allowlist": [".*"],
       "show_tracebacks": true,
       "http_keep_alive_timeout": 5
     }

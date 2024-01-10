@@ -3,10 +3,9 @@ ls -lrt
 jupyter --paths
 
 mkdir -p /home/jovyan/.local/etc/jupyter
-cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
+# cat jupyter_server_config_extra.py >> /home/jovyan/.local/etc/jupyter/jupyter_server_config.py
 
-export NODE_OPTIONS=--openssl-legacy-provider
-pip install git+https://github.com/nmearl/hubbleds.git
+pip install git+https://github.com/nmearl/hubbleds@2i2c-hub
 
 jupyter nbextension install --py --symlink --sys-prefix ipyevents
 jupyter nbextension enable ipyevents --py --sys-prefix

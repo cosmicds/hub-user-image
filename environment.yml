@@ -2,10 +2,10 @@ channels:
   - conda-forge
 
 dependencies:
-  - jupyter_contrib_nbextensions==0.5.1
-  - jupyterhub-singleuser>=3.0,<4.0
-  - python=3.8
-  - nbgitpuller=1.1.*
+  - jupyter_contrib_nbextensions
+  - jupyterhub-singleuser
+  - python=3.10
+  - nbgitpuller
   - pip
   - git
   - numpy
@@ -18,5 +18,5 @@ dependencies:
   - h5py
   - openblas
   - pip:
-    - jupyter-server-proxy==3.2.2
-    - aiohttp==3.8.4
+    - jupyter-server-proxy @ git+https://github.com/jupyterhub/jupyter-server-proxy.git
+    - aiohttp
